@@ -1,0 +1,176 @@
+.table {
+  .cellWrapper {
+    display: flex;
+    align-items: center;
+
+    .image {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      margin-right: 10px;
+      object-fit: cover;
+    }
+  }
+
+  .status {
+    padding: 5px;
+    border-radius: 5px;
+
+    &.Approved {
+      color: green;
+      background-color: rgba(0, 128, 0, 0.151);
+    }
+    &.Failed {
+      padding: 5px 20px ;
+      color: rgb(218, 32, 32);
+      background-color: rgba(214, 214, 6, 0.103);
+    }
+    &.Proccessing {
+      padding: 5px 5px ;
+      color: rgb(255, 255, 255);
+      background-color: rgba(2, 92, 55, 0.562);
+    }
+    &.Assessing {
+      padding: 5px 5px ;
+      color: rgb(255, 255, 255);
+      background-color: #7f3762;
+    }
+    &.Application {
+      padding: 5px 5px ;
+      color: rgb(255, 255, 255);
+      background-color: rgba(107, 107, 107, 0.562);
+    }
+    &.CoE{
+      padding: 5px 5px ;
+      color: rgb(255, 255, 255);
+      background-color: #d9813d;
+    }
+    &.Gte{
+      padding: 5px 5px ;
+      color: rgb(255, 255, 255);
+      background-color: #346072;
+    }
+    &.Fee{
+      padding: 5px 5px ;
+      color: rgb(255, 255, 255);
+      background-color: #d9813d;
+    }
+  }
+}
+
+.widget {
+  display: flex;
+  justify-content: space-between;
+  flex: 1;
+  padding: 10px;
+  -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+  box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+  border-radius: 10px;
+  height: 100px;
+  cursor: pointer;
+
+  .left,
+  .right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .title {
+      font-weight: bold;
+      font-size: 14px;
+      color: rgb(160, 160, 160);
+    }
+
+    .counter {
+      font-size: 28px;
+      font-weight: 300;
+    }
+
+    .link {
+      width: max-content;
+      font-size: 12px;
+      border-bottom: 1px solid gray;
+    }
+
+    .percentage {
+      display: flex;
+      align-items: center;
+      font-size: 14px;
+
+      &.positive {
+        color: green;
+      }
+      &.negative {
+        color: red;
+      }
+    }
+
+    .icon {
+      font-size: 18px;
+      padding: 5px;
+      border-radius: 5px;
+      align-self: flex-end;
+    }
+  }
+}
+
+.home {
+  display: flex;
+
+  .homeContainer {
+    flex: 6;
+
+    .widgets,
+    .charts {
+      display: flex;
+      padding: 20px;
+      gap: 20px;
+    }
+
+    .charts {
+      padding: 5px 20px;
+    }
+
+    .listContainer {
+      -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+      box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+      padding: 20px;
+      margin: 20px;
+
+      .listTitle {
+        font-weight: 500;
+        color: gray;
+        margin-bottom: 15px;
+      }
+    }
+  }
+}
+.removeBorder fieldset {
+
+   border-style: none !important;
+ 
+}
+.minarePakistan{
+  background-image: url(../../assests/images/tower.png);
+  height: 65px;
+  width: 20%;
+  background-size: cover;
+  margin-top: 5px;
+}
+.IslamabadPakistan{
+  background-image: url(../../assests/images/Islamabad.png);
+  height: 60px;
+  width: 21%;
+  background-size: cover;
+  margin-top: 12px;
+}
+.gujratPakistan{
+  background-image: url(../../assests/images/Gujrat.png);
+  height: 65px;
+  width: 20%;
+  background-size: cover;
+  margin-top: 5px;
+}
+// .css-1d3z3hw-MuiOutlinedInput-notchedOutline2{
+// border: 1px solid green;
+// }
